@@ -1,0 +1,55 @@
+html, body {
+  height:100%;
+  width:100%;
+}
+
+html {
+  //touch-action: pan-x pan-y;
+}
+
+body {
+  min-width:320px;
+  min-height:100%;
+  font-size:14px;
+  font-family: 'Roboto', Arial, Tahoma, sans-serif;
+  background:#000;
+  color:#fff;
+
+  &.noSel {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+}
+
+body {
+  text-size-adjust:none !important;
+  -webkit-text-size-adjust:none !important;
+  scroll-behavior: smooth;
+}
+
+html * {max-height:1000000px;}
+
+body div, body a, body li, body span, body label {max-height:1000000px;}
+
+img {
+  border:none;
+}
+
+a {
+  color:#fff;
+  text-decoration:none;
+  outline:none;
+}
+
+a:hover {
+  text-decoration:none;
+}
+
+#all {
+  margin:0 auto;
+  min-height:100%;
+  text-align:left;
+  position:relative;
+  z-index:auto;
+}
