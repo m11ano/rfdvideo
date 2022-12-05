@@ -1,11 +1,10 @@
 
 import './assets/main.less';
 
-/*
+
 import { createApp } from 'vue';
-import App from './vue_components/App.vue';
+import ContactForm from './vue_components/ContactForm.vue';
 
-const app = createApp(App);
-app.mount('#root');
+const contactForm = createApp(ContactForm);
+contactForm.mount('contact-form');
 
-*/
