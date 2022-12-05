@@ -951,9 +951,11 @@
 
     > .fields {
         padding-top:70px;
+        padding-bottom:60px;
 
         .xs-block({
             padding-top:30px;
+            padding-bottom:30px;
         });
 
         > div {
@@ -985,14 +987,39 @@
         }
     }
 
-    > .button {
-        padding-top:60px;
-        text-align: center;
-        font-size:0;
+    .errors {
+        padding-bottom:40px;
+        font-size:24px;
+        color:#ca2c2c;
+        font-weight:300;
 
         .xs-block({
-            padding-top:30px;
+            font-size: 18px;
+            padding-bottom:30px;
         });
+    }
+
+    > .button {
+        text-align: center;
+        font-size:0;
+    }
+
+    > .prev {
+        padding-top:40px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.2;
+        color:#a2a2a2;
+
+        .xs-block({
+            font-size: 12px;
+            padding-top:20px;
+        });
+
+        > a {
+            color:@color_1;
+            text-decoration: underline;
+        }
     }
 }
 
@@ -1271,4 +1298,19 @@ input[type="text"], input[type="number"], input[type="email"], input[type="passw
             });
         }
     }
+}
+
+#bg_holder {
+    background: url(images/bg.png) no-repeat center top 300px;
+    background-size:1836px 2366px;
+
+    .x2({
+        background-image: url(images/bg_x2.png);
+    });
+
+    .xs-block({
+        background-image: url(images/bg_mobile.png) !important;
+        background-size:550px 655px;
+        background-position: center top 1320px;
+    });
 }

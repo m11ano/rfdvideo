@@ -41,7 +41,7 @@
           </div>
         </div>
         <div class="block_2"><div><span>Наблюдайте</span> за тем, что Вам дорого через экран Вашего смартфона<br> <span>из любой точки мира!</span></div></div>
-        <div class="block_3"><a href="javascript://" class="blue_button"><span><span><span class="text">Подключить</span><span class="icon_connect">&nbsp;</span></span></span></a></div>
+        <div class="block_3"><a href="javascript://" onclick="window.funcsLib.windowScrollToBlock('contact_form_wrapper'); return false;" class="blue_button"><span><span><span class="text">Подключить</span><span class="icon_connect">&nbsp;</span></span></span></a></div>
         <div class="block_4"><div></div></div>
       </div>
 
@@ -66,74 +66,76 @@
         </div>
       </div>
 
-      <div id="block_2">
-        <div>
-          <div class="wrapper">
-            <div class="title">Абонентская плата <span>от 300 руб./мес</span></div>
-            <div class="b1"><span>Стоимость подключения</span> РоЕ-порта на паркинге <span>от 5 000 руб.</span></div>
-            <div class="b2">(Подключение является разовым платежом, интернет и электропитание для камеры подаётся по одному кабелю.)</div>
-            <div class="b3"></div>
-            <div class="b4">
-              При подключении необходима видеокамера с РоЕ-питанием.<br>
-              Вы можете использовать свою, или <a href="/">приобрести у нас</a> купольную видеокамеру.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="block_3">
-        <div>
-          <div class="title">Видеонаблюдение также <span>можно подключить:</span></div>
-          <div class="items">
-            <div id="block_3_1">
-              <div class="img"></div>
-              <div class="title">в квартире</div>
-              <div class="desc">подключение<br> 0 руб.</div>
-            </div>
-            <div id="block_3_2">
-              <div class="img"></div>
-              <div class="title">в кладовой</div>
-              <div class="desc">подключение<br> от 5 000 руб.</div>
-            </div>
-            <div id="block_3_3">
-              <div class="img"></div>
-              <div class="title">в МОПе и холле</div>
-              <div class="desc">по согласованию<br> с УК</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="block_4">
-        <div>
-          <div class="wrapper">
-            <contact-form id="contact_form"></contact-form>
-          </div>
-        </div>
-      </div>
-
-      <div id="block_5">
-        <div>
-          <div class="title">Консультации и подключение:<br> <a href="tel:+74956459828">+7 495-645-98-28</a></div>
-          <div class="items">
-            <div class="left"></div>
-            <div class="right">
-              <div class="logo"><a href="https://rosfondom.ru/">&nbsp;</a></div>
-              <div class="support">
-                <div class="icon"></div>
-                <div class="text">
-                  <div class="title">Поддержка Абонентов:</div>
-                  <div class="title_mobile">Поддержка:</div>
-                  <div class="phone"><a href="tel:+74995515331">+7 (499) 551-53-31</a></div>
-                </div>
+      <div id="bg_holder">
+        <div id="block_2">
+          <div>
+            <div class="wrapper">
+              <div class="title">Абонентская плата <span>от 300 руб./мес</span></div>
+              <div class="b1"><span>Стоимость подключения</span> РоЕ-порта на паркинге <span>от 5 000 руб.</span></div>
+              <div class="b2">(Подключение является разовым платежом, интернет и электропитание для камеры подаётся по одному кабелю.)</div>
+              <div class="b3"></div>
+              <div class="b4">
+                При подключении необходима видеокамера с РоЕ-питанием.<br>
+                Вы можете использовать свою, или <a href="/">приобрести у нас</a> купольную видеокамеру.
               </div>
-              <div class="vk"><a href="https://vk.com/club211235048" target="_blank" rel="nofollow">&nbsp;</a></div>
-              <div class="tg"><a href="https://t.me/rosfondom" target="_blank" rel="nofollow">&nbsp;</a></div>
             </div>
           </div>
-          <div class="copyrights">
-            Общество с ограниченной ответственностью "РУСФОНДОМ".<br>
-            Адрес: УЛ. 4-Я 8 МАРТА Д. 6А ПОМЕЩ. XVII ЭТ 11 КОМ 3, МОСКВА, 125167, Россия.
+        </div>
+
+        <div id="block_3">
+          <div>
+            <div class="title">Видеонаблюдение также <span>можно подключить:</span></div>
+            <div class="items">
+              <div id="block_3_1">
+                <div class="img"></div>
+                <div class="title">в квартире</div>
+                <div class="desc">подключение<br> 0 руб.</div>
+              </div>
+              <div id="block_3_2">
+                <div class="img"></div>
+                <div class="title">в кладовой</div>
+                <div class="desc">подключение<br> от 5 000 руб.</div>
+              </div>
+              <div id="block_3_3">
+                <div class="img"></div>
+                <div class="title">в МОПе и холле</div>
+                <div class="desc">по согласованию<br> с УК</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="block_4">
+          <div>
+            <div class="wrapper" id="contact_form_wrapper">
+              <contact-form id="contact_form"></contact-form>
+            </div>
+          </div>
+        </div>
+
+        <div id="block_5">
+          <div>
+            <div class="title">Консультации и подключение:<br> <a href="tel:+74956459828">+7 495-645-98-28</a></div>
+            <div class="items">
+              <div class="left"></div>
+              <div class="right">
+                <div class="logo"><a href="https://rosfondom.ru/">&nbsp;</a></div>
+                <div class="support">
+                  <div class="icon"></div>
+                  <div class="text">
+                    <div class="title">Поддержка Абонентов:</div>
+                    <div class="title_mobile">Поддержка:</div>
+                    <div class="phone"><a href="tel:+74995515331">+7 (499) 551-53-31</a></div>
+                  </div>
+                </div>
+                <div class="vk"><a href="https://vk.com/club211235048" target="_blank" rel="nofollow">&nbsp;</a></div>
+                <div class="tg"><a href="https://t.me/rosfondom" target="_blank" rel="nofollow">&nbsp;</a></div>
+              </div>
+            </div>
+            <div class="copyrights">
+              Общество с ограниченной ответственностью "РУСФОНДОМ".<br>
+              Адрес: УЛ. 4-Я 8 МАРТА Д. 6А ПОМЕЩ. XVII ЭТ 11 КОМ 3, МОСКВА, 125167, Россия.
+            </div>
           </div>
         </div>
       </div>

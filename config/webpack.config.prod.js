@@ -19,10 +19,16 @@ console.log(mode);
 module.exports = {
   mode: mode,
   devServer: (mode == 'production' ? undefined : {
-    static: {
-      directory: path.join(__dirname, '../files'),
-      publicPath: '/files',
-    },
+    static: [
+      {
+        directory: path.join(__dirname, '../files'),
+        publicPath: '/files',
+      },
+      {
+        directory: path.join(__dirname, '../engine'),
+        publicPath: '/engine',
+      }
+  ],
     compress: true,
     port: 9000,
     host: '0.0.0.0',
@@ -43,13 +49,13 @@ module.exports = {
       minify : false,
       inject : 'body'
     }),
-    /*
+    
     new CopyPlugin({
       patterns: [
-        { from: "source", to: "dest" },
+        { from: "engine", to: "./engine/" },
       ],
     }),
-    */
+    
     new VueLoaderPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].css'
